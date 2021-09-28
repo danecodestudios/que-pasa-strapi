@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/primicias",
+      "handler": "primicias.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/primicias",
+      "handler": "primicias.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/primicias",
+      "handler": "primicias.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

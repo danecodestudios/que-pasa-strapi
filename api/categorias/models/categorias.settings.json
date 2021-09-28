@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias",
+  "info": {
+    "name": "categorias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "noticias": {
+      "collection": "noticias",
+      "via": "categorias",
+      "dominant": true
+    },
+    "destacados": {
+      "via": "categorias",
+      "collection": "destacados"
+    }
+  }
+}

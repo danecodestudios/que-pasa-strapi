@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "primicias",
+  "info": {
+    "name": "primicias",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "destacado": {
+      "model": "destacados"
+    },
+    "destacados": {
+      "collection": "destacados"
+    }
+  }
+}

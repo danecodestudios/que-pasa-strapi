@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destacados",
+  "info": {
+    "name": "destacados",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "imagen": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "categorias": {
+      "collection": "categorias",
+      "via": "destacados",
+      "dominant": true
+    }
+  }
+}

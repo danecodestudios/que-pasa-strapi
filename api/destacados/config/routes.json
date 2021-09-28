@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/destacados",
+      "handler": "destacados.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/destacados/count",
+      "handler": "destacados.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/destacados/:id",
+      "handler": "destacados.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/destacados",
+      "handler": "destacados.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/destacados/:id",
+      "handler": "destacados.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/destacados/:id",
+      "handler": "destacados.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
