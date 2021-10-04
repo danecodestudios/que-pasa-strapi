@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "categorias",
   "info": {
-    "name": "categorias"
+    "name": "Categoria"
   },
   "options": {
     "increments": true,
@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nombre": {
+    "titulo": {
       "type": "string"
     },
     "noticias": {
@@ -20,8 +20,9 @@
       "dominant": true
     },
     "destacados": {
+      "collection": "destacados",
       "via": "categorias",
-      "collection": "destacados"
+      "dominant": true
     }
   }
 }

@@ -31,7 +31,7 @@
     },
     "categorias": {
       "via": "noticias",
-      "collection": "categorias"
+      "collection": "categoria"
     }
   }
 }

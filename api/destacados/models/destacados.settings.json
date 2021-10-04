@@ -31,9 +31,8 @@
       "type": "richtext"
     },
     "categorias": {
-      "collection": "categorias",
       "via": "destacados",
-      "dominant": true
+      "collection": "categoria"
     }
   }
 }
