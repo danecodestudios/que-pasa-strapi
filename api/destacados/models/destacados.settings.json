@@ -33,6 +33,10 @@
     "categorias": {
       "via": "destacados",
       "collection": "categoria"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "titulo"
     }
   }
 }

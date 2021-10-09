@@ -15,13 +15,13 @@
       "type": "string"
     },
     "noticias": {
-      "collection": "noticias",
       "via": "categorias",
+      "collection": "noticias",
       "dominant": true
     },
     "destacados": {
-      "collection": "destacados",
       "via": "categorias",
+      "collection": "destacados",
       "dominant": true
     }
   }
