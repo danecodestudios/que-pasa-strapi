@@ -9,9 +9,8 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "strapi": "3.6.8",
+    "strapi": "^3.1.4",
     "strapi-admin": "3.6.8",
     "strapi-connector-mongoose": "3.6.8",
     "strapi-plugin-content-manager": "3.6.8",
@@ -31,7 +30,7 @@
     "uuid": "542d2d1a-76b8-45d1-abc9-bfe2a1e071be"
   },
   "engines": {
-    "node": ">=10.16.0 <=14.x.x",
+    "node": ">=10.16.0 <=17.x.x",
     "npm": "^6.0.0"
   },
   "license": "MIT"
