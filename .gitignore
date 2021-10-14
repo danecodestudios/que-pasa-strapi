@@ -115,3 +115,4 @@ build
 
 package-lock.json
 backup.txt
+database.js
