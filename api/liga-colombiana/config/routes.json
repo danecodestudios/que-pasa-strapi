@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/liga-colombianas",
+      "handler": "liga-colombiana.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/liga-colombianas/count",
+      "handler": "liga-colombiana.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/liga-colombianas/:id",
+      "handler": "liga-colombiana.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/liga-colombianas",
+      "handler": "liga-colombiana.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/liga-colombianas/:id",
+      "handler": "liga-colombiana.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/liga-colombianas/:id",
+      "handler": "liga-colombiana.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

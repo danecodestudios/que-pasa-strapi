@@ -13,22 +13,24 @@
   "pluginOptions": {},
   "attributes": {
     "titulo": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "imagen": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "descripcion": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "categorias": {
       "via": "noticias",
@@ -36,7 +38,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "titulo"
+      "targetField": "titulo",
+      "required": false
     }
   }
 }

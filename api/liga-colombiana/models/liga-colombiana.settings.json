@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "liga_colombianas",
+  "info": {
+    "name": "Liga Colombiana",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Equipo": {
+      "type": "string",
+      "required": true
+    },
+    "Logo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "PJ": {
+      "required": true,
+      "type": "integer"
+    },
+    "Puntos": {
+      "type": "biginteger"
+    },
+    "PG": {
+      "type": "biginteger"
+    },
+    "PP": {
+      "type": "biginteger"
+    },
+    "DG": {
+      "type": "biginteger"
+    },
+    "PE": {
+      "type": "biginteger"
+    },
+    "Posision": {
+      "type": "integer"
+    },
+    "GF": {
+      "type": "integer"
+    },
+    "GC": {
+      "type": "integer"
+    }
+  }
+}
