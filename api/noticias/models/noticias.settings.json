@@ -34,7 +34,7 @@
       "via": "noticias",
       "collection": "categoria"
     },
-    "Slug": {
+    "slug": {
       "type": "uid",
       "targetField": "titulo"
     }

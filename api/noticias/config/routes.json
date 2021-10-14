@@ -8,6 +8,8 @@
         "policies": []
       }
     },
+
+
     {
       "method": "GET",
       "path": "/noticias/count",
@@ -24,6 +26,15 @@
         "policies": []
       }
     },
+    {
+  
+      "method": "GET",
+      "path": "/noticias/:slug",
+      "handler": "noticias.findSlug",
+      "config": {
+        "policies": []
+      }
+   },
     {
       "method": "POST",
       "path": "/noticias",

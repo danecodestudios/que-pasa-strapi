@@ -1,3 +1,5 @@
+const {sanitizeEntity} = require('strapi-utils')
+
 'use strict';
 
 /**
@@ -5,4 +7,11 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+    async findSlug(ctx) {
+    const { slug } = ctx.params;
+
+    const entity = await strapi.services.noticias.findOne({ slug });
+    return sanitizeEntity(entity, { model: strapi.models.noticias });
+  },
+};
